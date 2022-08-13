@@ -44,3 +44,8 @@ body {
   transition: max-height 0.2s ease-out;
 } 
 
+/* REVISAR TUDO - MODIFICANDO */
+
+.underline {
+  text-decoration: underline;
+}
