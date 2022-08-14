@@ -6,7 +6,7 @@
   <title>Obrigado | Direito na Compra</title>
 </head>
 
-<body>
+<body class="flex flex-col h-screen">
 
   <header class="w-full px-0 lg:px-8 h-16 text-gray-700 body-font bg-gray-100">
     <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
@@ -43,86 +43,78 @@
       </div>
   </header>
 
-  <section class="text-gray-700 body-font bg-gray-100">
-    <div class="container px-5 py-16 mx-auto">
+  <section class="flex text-gray-700 body-font bg-gray-100 flex-grow">
+    <div class="container container flex flex-col justify-center md:mx-auto mx-8">
       <div class="text-center">
-        <h1 class="sm:text-3xl text-2xl font-bold title-font text-red-500 mb-4">OBRIGADO!</h1>
-        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Precisaremos somente de algumas informações para entrarmos em contato contigo.</p>
+
+        <div class="sm:w-32 sm:h-32 h-20 w-20 inline-flex items-center justify-center rounded-full bg-gray-100 text-red-500 p-4 flex-shrink-0">
+          <svg class="h-16 h-16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+          </svg>
+        </div>
+
+        
+
+        <h1 class="sm:text-3xl text-2xl font-bold title-font text-red-500 mb-4">E-MAIL ENVIADO!</h1>
         <div class="flex mt-6 justify-center">
           <div class="w-16 h-1 rounded-full bg-gray-400 inline-flex"></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="text-gray-700 body-font relative">
-    <div class="container px-5 pt-20 pb-20 mx-auto">
-      <div class="lg:w-1/2 md:w-2/3 mx-auto">
-
-          <form class="flex flex-wrap -m-2" target="_blank" action="https://formsubmit.co/direitonacompra@gmail.com" method="POST">
-            <div class="p-2 w-full">
-              <label class="font-bold" for="name">Nome</label>
-              <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-gray-900 text-base placeholder-gray-700 px-4 py-2 mt-2" placeholder="Insira seu nome" id="name" type="text" name="name" pattern="[A-Za-z\s]{3,}" title="O campo nome precisa de pelo menos 3 letras e não podem ser números" required>
-            </div>
-            <div class="p-2 w-1/2">
-              <label class="font-bold" for="email">E-mail</label>
-              <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-gray-900 text-base placeholder-gray-700 px-4 py-2 mt-2" placeholder="fulano@gmail.com" id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="email@email.com" required>
-            </div>
-            <div class="p-2 w-1/2">
-              <label class="font-bold" for="tel">Telefone</label>
-              <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-gray-900 text-base placeholder-gray-700 px-4 py-2 mt-2" placeholder="(00) 0 0000-0000" id="tel" type="tel" name="tel" data-js="phone" required>
-            </div>
-            <div class="p-2 w-full">
-              <label class="font-bold" for="message">Descreva seu caso</label>
-              <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-gray-900 text-base placeholder-gray-700 px-4 py-2 mt-2 resize-none block" placeholder="Nos conte brevemente sobre seu caso. Qualquer informação aqui pode adiantar o processo durante a análise feita pelos especialistas." name="message" rows="10" required></textarea>
-            </div>
-
-            <div class="p-2 w-full">
-              <button class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg" type="submit">Enviar</button>
-            </div>
-
-            <input type="hidden" name="_next" value="https://direitonacompra.com.br/obrigado-por-se-registrar.html">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-        </form>
+        <p class="text-base leading-relaxed mt-6 xl:w-2/4 lg:w-3/4 mx-auto">Seu e-mail foi encaminhado e os responsáveis irão entrar em contato em breve!</p>
         
       </div>
     </div>
   </section>
 
-
   <footer class="text-gray-700 body-font bg-gray-100">
-    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <div class="container px-5 py-8 mx-auto flex items-center md:flex-row flex-col">
       <a href="/" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
         <img class="h-8" src="/images/logo.svg" alt="Logo do Direito na Compra">
       </a>
-      <nav class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+
+      <nav class="flex flex-col md:flex-row text-sm text-gray-500 md:ml-4 md:pl-4 md:border-l-2 md:border-gray-200 md:py-2 md:mt-0 mt-8 text-center">
         <a href="/perguntas-frequentes" class="hover:text-gray-900">Perguntas Frequentes</a>
-        <a href="/termos-de-uso" class="ml-3 hover:text-gray-900">Termos de Uso</a>
-        <a href="/cadastro-de-advogados" class="ml-3 hover:text-gray-900">Cadastro de Advogados</a>
+        <a href="/termos-de-uso" class="md:ml-3 hover:text-gray-900">Termos de Uso</a>
+        <a href="/cadastro-de-advogados" class="md:ml-3 hover:text-gray-900">Cadastro de Advogados</a>
       </nav>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <a href="#" class="text-gray-500 hover:text-gray-600">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-          </svg>
-        </a>
+
+      <span class="inline-flex md:ml-auto md:mt-0 mt-8 justify-center md:justify-start">
+
+        <!-- Instagram -->
         <a href="#" class="ml-3 text-gray-500 hover:text-gray-600">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a href="#" class="ml-3 text-gray-500 hover:text-gray-600">
+
+        <!-- Facebook -->
+        <!-- <a href="#" class="text-gray-500 hover:text-gray-600">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a> -->
+
+        <!-- Twitter -->
+        <!-- <a href="#" class="ml-3 text-gray-500 hover:text-gray-600">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
           </svg>
-        </a>
+        </a> -->
+
       </span>
     </div>
   </footer>
-
+  
+  
+  <!-- Responsive Menu -->
+  <script>
+    var menu = document.getElementById('menu');
+    function toggleMenu() {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('w-full');
+        menu.classList.toggle('h-screen');
+    }
+  </script>
 
   <script src="js/app.js"></script>
 </body>
