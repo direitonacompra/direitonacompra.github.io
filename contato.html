@@ -72,6 +72,55 @@
               <label class="font-bold" for="tel">Telefone</label>
               <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-gray-900 text-base placeholder-gray-700 px-4 py-2 mt-2" placeholder="(00) 0 0000-0000" id="tel" type="tel" name="tel" data-js="phone" required>
             </div>
+            
+            <div class="p-2 w-1/2">
+              <label class="font-bold" for="city">Cidade</label>
+              <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-gray-900 text-base placeholder-gray-700 px-4 py-2 mt-2" placeholder="Escreva a cidade onde mora" id="city" type="text" name="city" required>
+            </div>
+            <!-- <div class="p-2">
+              <label class="font-bold" for="state">Estado</label>
+              <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-gray-900 text-base placeholder-gray-700 px-4 py-2 mt-2" placeholder="Escreve o estado" id="state" type="text" name="state" required>
+            </div> -->
+
+            <div class="p-2 w-1/2">
+              <label class="font-bold" for="estado">Estado</label>
+              <!-- <select name="estado" id="estado" form="carform">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select> -->
+              <select name="estado" id="estado" class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-gray-900 text-base placeholder-gray-700 px-4 py-2 mt-2" required>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>  
+
             <div class="p-2 w-full">
               <label class="font-bold" for="message">Descreva seu caso</label>
               <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-gray-900 text-base placeholder-gray-700 px-4 py-2 mt-2 resize-none block" placeholder="Nos conte brevemente sobre seu caso. Qualquer informação aqui pode adiantar o processo durante a análise feita pelos especialistas." name="message" rows="10" required></textarea>
